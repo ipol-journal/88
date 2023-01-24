@@ -5,7 +5,7 @@ import argparse
 
 # parse the arguments
 ap = argparse.ArgumentParser()
-ap.add_argument("alpha", type=int)
+ap.add_argument("alpha", type=float)
 ap.add_argument("omega", type=str)
 ap.add_argument("gaussianstd", type=int)
 ap.add_argument("method", type=str)
