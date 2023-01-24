@@ -22,10 +22,8 @@ else:
     args.method += ':' + str(args.numlevels)
 
 
-with open('stdout.txt', 'w') as stdout:
-    p1 = ['ace', '-a', str(args.alpha), '-w' + str(args.omega), '-m' + str(args.method), 'input_0.png', 'ace.png']
-    subprocess.run(p1, stdout=stdout, stderr=stdout) 
+p1 = ['ace', '-a', str(args.alpha), '-w' + str(args.omega), '-m' + str(args.method), 'input_0.png', 'ace.png']
+subprocess.run(p1) 
 
-with open('stdout.txt', 'w') as stdout:
-    p2 = ['histeq', 'input_0.png', 'he.png']
-    subprocess.run(p2, stderr=stdout)
+p2 = ['histeq', 'input_0.png', 'he.png']
+subprocess.run(p2)
